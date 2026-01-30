@@ -1,0 +1,6 @@
+playwright
+PyPDF2
+pdfplumber
+openai
+feedparser==6.0.10
+requests==2.31.0

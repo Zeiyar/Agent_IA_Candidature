@@ -1,0 +1,49 @@
+{
+  "keywords": [
+    "alternance développeur IA",
+    "alternance machine learning",
+    "alternance data scientist",
+    "alternance Python IA",
+    "apprentissage développeur IA"
+  ],
+  "locations": [
+    "France",
+    "Paris",
+    "Lyon",
+    "Toulouse",
+    "Remote",
+    "Télétravail"
+  ],
+  "contract_types": [
+    "alternance",
+    "apprentissage",
+    "contrat pro"
+  ],
+  "max_offers_per_run": 20,
+  "sources": {
+    "pole_emploi": {
+      "enabled": false,
+      "api_url": "https://api.emploi-store.fr/partenaire/offresdemploi/v2/offres/search"
+    },
+    "hellowork": {
+      "enabled": false,
+      "rss_url": "https://www.hellowork.com/fr-fr/emplois.rss",
+      "search_params": {
+        "k": "alternance développeur IA",
+        "l": "France"
+      }
+    },
+    "indeed": {
+      "enabled": true,
+      "rss_url": "https://www.indeed.fr/rss",
+      "search_params": {
+        "q": "alternance développeur IA",
+        "l": "France"
+      }
+    },
+    "manual": {
+      "enabled": true,
+      "file": "data/job_urls.txt"
+    }
+  }
+}

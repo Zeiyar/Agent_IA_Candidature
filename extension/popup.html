@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Candidature</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Assistant Candidature IA</h1>
+        
+        <!-- Statut de détection -->
+        <div class="detection-card" id="detection-card">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Analyse de la page en cours...</p>
+            </div>
+        </div>
+        
+        <!-- Informations du site -->
+        <div class="site-info" id="site-info" style="display: none;">
+            <h3>📍 Site détecté</h3>
+            <div class="site-badge" id="site-badge">
+                <span class="site-name"></span>
+            </div>
+        </div>
+        
+        <!-- Workflow détecté -->
+        <div class="workflow-info" id="workflow-info" style="display: none;">
+            <h3>🔄 Workflow de candidature</h3>
+            <div class="workflow-card" id="workflow-card">
+                <div class="workflow-icon"></div>
+                <div class="workflow-details">
+                    <strong class="workflow-label"></strong>
+                    <p class="workflow-description"></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Informations de l'offre -->
+        <div class="job-info" id="job-info" style="display: none;">
+            <h3>💼 Informations</h3>
+            <div class="info-item">
+                <strong>Titre :</strong>
+                <p id="job-title">-</p>
+            </div>
+            <div class="info-item">
+                <strong>URL :</strong>
+                <p id="job-url" class="url-text">-</p>
+            </div>
+        </div>
+        
+        <!-- Actions -->
+        <div class="actions" id="actions" style="display: none;">
+            <button id="analyze-btn" class="btn btn-primary">
+                🔍 Analyser l'offre
+            </button>
+            <button id="refresh-btn" class="btn btn-secondary">
+                🔄 Rafraîchir
+            </button>
+        </div>
+        
+        <!-- Résultats -->
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
